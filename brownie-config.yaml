@@ -7,6 +7,13 @@ compiler:
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'    
       - '@openzepplin=OpenZeppelin/openzeppelin-contracts@3.4.0'
 networks:
+  default: development 
   mainnet-fork: 
     eth_usd_price_feed:"0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
     verify:False
+  sepolia:
+    vrf_cordinator:"0x8103B0A8A00be2DDC778e6e7eaa21791Cd364625"
+    link_token:"0x779877A7B0D9E8603169DdbD7836e478b4624789"
+    eht_usd_price_feed:"0x694AA1769357215DE4FAC081bf1f309aDC325306"
+wallets:
+  from_key: ${PRIVATE_KEY}
