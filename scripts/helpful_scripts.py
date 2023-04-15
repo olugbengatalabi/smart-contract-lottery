@@ -55,7 +55,7 @@ def get_contract(contract_name):
   
      
 DECIMALS = 8
-INITIAL_VALUE =  20000000000
+INITIAL_VALUE =  200000000000
 
 def deploy_mocks(decimals = DECIMALS, initial_value = INITIAL_VALUE):
   print("deploy mocks called")

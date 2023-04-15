@@ -39,7 +39,10 @@ def test_can_pick_winner_correctly():
     get_contract("vrf_coordinator").callBackWithRandomness(request_id, STARTING_RND, lottery.address, {"from":account} )
     
     starting_balance_of_account = account.balance()
+    print(f"initial account balance of the winner is {starting_balance_of_account}")
     balance_of_lottery = lottery.balance()
+    print(
+        f"initial account balance of the lottery is {lottery.balance()}")
     # 777 % 3
     assert lottery.recentWinner() == account
     assert lottery.balance() == 0
