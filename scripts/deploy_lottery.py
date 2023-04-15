@@ -10,8 +10,8 @@ def deploy_lottery():
   print("account gotten")
   print(f"{account} is the account")
   fees = config["networks"][network.show_active()]["fee"]
-  keys = config["networks"][network.show_active()]["keyhash"]
   print(f"type of  {fees} is {type(fees)}")
+  keys = config["networks"][network.show_active()]["keyhash"]
   print(f"type of  {keys} is {type(keys)}")
   
   """
